@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Click 'Add Claim'",
+  "Type": "Element",
+  "Id": "4cDuYNzMkkCtKXnwHBK8WA",
+  "Reference": "7uUkxky9CUOzpZGoHk-pIw/4cDuYNzMkkCtKXnwHBK8WA",
+  "ParentRef": "7uUkxky9CUOzpZGoHk-pIw/8p7LSZhjj0uDsANXuEi-Lg",
+  "Created": "2024-07-25T07:53:08.8894809Z",
+  "Updated": "2024-07-25T07:53:08.8894809Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.0.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.10.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

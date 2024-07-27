@@ -1,0 +1,52 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "TriggerEventArgs"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "../../../../../Program Files/UiPath/Studio/Snippets/Windows/SnippetsVBasic/Snippets/Orchestration/Start Job and Resume After Completion.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Test&Sequence_1",
+        "JobPersistenceData&Sequence_1",
+        "JobData&Sequence_1",
+        "ProcessName&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "RyzeClaims.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dt&Sequence_1",
+        "fileobject&Sequence_1",
+        "dt_string&Sequence_1",
+        "Workbook_Sheets1&Sequence_7",
+        "Work&Sequence_7",
+        "Sheets&Sequence_7",
+        "ClaimsInvoice&Sequence_7",
+        "ClaimsData&Sequence_8"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}

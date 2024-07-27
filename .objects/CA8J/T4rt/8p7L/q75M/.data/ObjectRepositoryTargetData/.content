@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="PZwxdKNXDkWxMfjIeb0NZQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://dev01.ryzeclaims.com/knowledgehub" CVScreenId="601881c2-ece1-4bff-bf3c-58400475d849" CvElementArea="342, 466, 377, 74" CvType="Button" DesignTimeRectangle="664, 476, 31, 37" DesignTimeScaleFactor="1.25" ElementType="Icon" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;button&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;button&amp;gt;span&amp;gt;svg' parentid='fuse-main' tag='svg' /&gt;" FuzzyMatches="10000" FuzzySelectorArgument="&lt;webctrl type='' parentid='fuse-main' tag='svg' class='jss3955' aaname='' /&gt;" Guid="ab1858c5-f2f2-492e-9519-41901fe8d33c" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Knowledge Hub' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target CVScreenId="601881c2-ece1-4bff-bf3c-58400475d849" CvElementArea="341, 258, 198, 50" CvTextArea="364, 274, 121, 20" CvTextArgument="Knowledge Hub" CvType="Button" DesignTimeRectangle="343, 261, 165, 46" ElementType="Button" FullSelectorArgument="&lt;webctrl parentid='current' tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='current' tag='BUTTON' type='button' class='' aaname='Knowledge Hub' check:innerText='Knowledge Hub' /&gt;" Guid="87f97e8f-8987-4f03-ab2d-a0c5157fec7e" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <TargetAnchorable.PointOffset>
+        <PointOffset X="-2" Y="-2" />
+      </TargetAnchorable.PointOffset>
+      <imageRef attrName="InformativeScreenshot" originalValue="6c296afa5e95d728ba013431f18a467b.png" xmlns="">0Yco3O3rKmEa1V6h1GRJLxA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

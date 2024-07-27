@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Chrome Login",
+  "Type": "App",
+  "Id": "CA8J-SCFQEGZtAzlktoPhA",
+  "Reference": "7uUkxky9CUOzpZGoHk-pIw/CA8J-SCFQEGZtAzlktoPhA",
+  "Created": "2024-07-25T07:53:07.2756263Z",
+  "Updated": "2024-07-25T07:53:07.2756263Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.0.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.10.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,16 @@
+﻿{
+  "Name": "Downloads",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Id": "Tca7GJLsSk-Woz4kRN8uuQ",
+  "Reference": "7uUkxky9CUOzpZGoHk-pIw/Tca7GJLsSk-Woz4kRN8uuQ",
+  "ParentRef": "7uUkxky9CUOzpZGoHk-pIw/94ofxqIigUC1uKeNNqxqGQ",
+  "Created": "2024-07-26T06:52:11.1728628Z",
+  "Updated": "2024-07-26T07:05:12.8039171Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.10.3.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=24.10.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

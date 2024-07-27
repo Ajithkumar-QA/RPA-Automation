@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Click 'SVG'",
+  "Type": "Element",
+  "TaxonomyType": "Icon",
+  "Id": "q75M_egp00muuxVH-jkdgg",
+  "Reference": "7uUkxky9CUOzpZGoHk-pIw/q75M_egp00muuxVH-jkdgg",
+  "ParentRef": "7uUkxky9CUOzpZGoHk-pIw/8p7LSZhjj0uDsANXuEi-Lg",
+  "Created": "2024-07-26T07:04:07.7305321Z",
+  "Updated": "2024-07-26T07:04:07.7305321Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.0.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.10.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

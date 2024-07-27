@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="3c6Lz1hdekirVI2CQXTLSQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://dev01.ryzeclaims.com/claims" CVScreenId="a3ac0a76-15d6-43ec-808e-2a6cdb412f53" CvElementArea="1521, 259, 108, 42" CvTextArea="1554, 272, 65, 14" CvTextArgument="Add Claim" CvType="Button" DesignTimeRectangle="1550, 215, 72, 25" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl aaname='Add Claim' tag='LABLE' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Add Claim' tag='LABLE' type='' class='' check:innerText='Add Claim' /&gt;" Guid="fa85e1a8-b3c2-4238-bb2f-7778d2cc1295" ScopeSelectorArgument="&lt;html app='chrome.exe' title='AllClaims' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="a2e0e534-4cf7-4b53-9d1e-974742cd7905" CvElementArea="1521, 207, 107, 42" CvType="Button" DesignTimeRectangle="1527, 216, 23, 23" ElementType="Icon" FullSelectorArgument="&lt;webctrl aaname='add claim' parentid='tabpanel-allclaims' tag='IMG' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='add claim' parentid='tabpanel-allclaims' tag='IMG' type='' class='material-icons' /&gt;" Guid="c3092cc4-b814-4388-a48a-e26f630f745e" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="eaa72be1005f5b4bd9b85f4674d36dd4.png" xmlns="">0hHEvt4CFRU67-TyZ-Vo5JA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

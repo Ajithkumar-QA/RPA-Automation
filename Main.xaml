@@ -1,0 +1,388 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:uuat="clr-namespace:UiPath.UIAutomationNext.Activities.Triggers;assembly=UiPath.UIAutomationNext.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="TriggerEventArgs" Type="InArgument(uuat:MonitorKeyboardEventArgs)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>848.8,2296</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.Vision.OCR</x:String>
+      <x:String>UiPath.OCR.Contracts</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.OCR.Contracts.Activities</x:String>
+      <x:String>UiPath.Core.Activities.OCR.Engines</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.Testing</x:String>
+      <x:String>UiPath.Testing.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Triggers</x:String>
+      <x:String>UiPath.Platform.Triggers</x:String>
+      <x:String>UiPath.Platform.Triggers.Scope</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Triggers</x:String>
+      <x:String>UiPath.CV</x:String>
+      <x:String>UiPath.Shared.ObjectLibrary</x:String>
+      <x:String>UiPath.CV.Activities</x:String>
+      <x:String>UiPath.OCR.Activities</x:String>
+      <x:String>UiPath.CV.Activities.Interfaces</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
+      <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
+      <x:String>Microsoft.Win32.SafeHandles</x:String>
+      <x:String>System.Numerics</x:String>
+      <x:String>System.Net</x:String>
+      <x:String>System.Globalization</x:String>
+      <x:String>System.Configuration.Assemblies</x:String>
+      <x:String>System.CodeDom.Compiler</x:String>
+      <x:String>System.Buffers</x:String>
+      <x:String>System.Buffers.Text</x:String>
+      <x:String>System.Buffers.Binary</x:String>
+      <x:String>System.Threading</x:String>
+      <x:String>System.Threading.Tasks</x:String>
+      <x:String>System.Threading.Tasks.Sources</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>System.Text.Unicode</x:String>
+      <x:String>System.Security.Principal</x:String>
+      <x:String>System.Security.Permissions</x:String>
+      <x:String>System.Security.Cryptography</x:String>
+      <x:String>System.Runtime</x:String>
+      <x:String>System.Runtime.Remoting</x:String>
+      <x:String>System.Runtime.ExceptionServices</x:String>
+      <x:String>System.Runtime.ConstrainedExecution</x:String>
+      <x:String>System.Runtime.Versioning</x:String>
+      <x:String>System.Runtime.Loader</x:String>
+      <x:String>System.Runtime.Intrinsics</x:String>
+      <x:String>System.Runtime.Intrinsics.Wasm</x:String>
+      <x:String>System.Runtime.Intrinsics.Arm</x:String>
+      <x:String>System.Runtime.Intrinsics.X86</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>System.Runtime.InteropServices.ObjectiveC</x:String>
+      <x:String>System.Runtime.InteropServices.Marshalling</x:String>
+      <x:String>System.Runtime.InteropServices.ComTypes</x:String>
+      <x:String>System.Runtime.CompilerServices</x:String>
+      <x:String>System.Resources</x:String>
+      <x:String>System.Reflection.Metadata</x:String>
+      <x:String>System.Reflection.Emit</x:String>
+      <x:String>System.IO.Enumeration</x:String>
+      <x:String>System.Diagnostics.SymbolStore</x:String>
+      <x:String>System.Diagnostics.Contracts</x:String>
+      <x:String>System.Diagnostics.CodeAnalysis</x:String>
+      <x:String>System.Diagnostics.Tracing</x:String>
+      <x:String>System.Collections.Concurrent</x:String>
+      <x:String>Internal</x:String>
+      <x:String>System.CodeDom</x:String>
+      <x:String>Microsoft.CSharp</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Linq.Expressions.Interpreter</x:String>
+      <x:String>System.Dynamic</x:String>
+      <x:String>UiPath.Workflow.Runtime</x:String>
+      <x:String>System.Activities.Tracking</x:String>
+      <x:String>System.Activities.Statements.Tracking</x:String>
+      <x:String>System.Activities.Runtime</x:String>
+      <x:String>System.Activities.Runtime.DurableInstancing</x:String>
+      <x:String>System.Activities.ParallelTracking</x:String>
+      <x:String>System.Activities.Hosting</x:String>
+      <x:String>System.Activities.Persistence</x:String>
+      <x:String>System.Activities.DurableInstancing</x:String>
+      <x:String>System.ComponentModel.Design.Serialization</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
+      <x:String>Microsoft.VisualBasic.FileIO</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Core</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Contracts</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.Testing</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.Watcher</AssemblyReference>
+      <AssemblyReference>System.IO.Packaging</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.AccessControl</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
+      <AssemblyReference>System.Linq.Async.Queryable</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>System.Security.Cryptography</AssemblyReference>
+      <AssemblyReference>System.Security.Principal.Windows</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.Process</AssemblyReference>
+      <AssemblyReference>System.IO.Pipes</AssemblyReference>
+      <AssemblyReference>System.IO.MemoryMappedFiles</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Registry</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>System.Net.Primitives</AssemblyReference>
+      <AssemblyReference>System.Net.HttpListener</AssemblyReference>
+      <AssemblyReference>System.Net.WebProxy</AssemblyReference>
+      <AssemblyReference>System.Net.NameResolution</AssemblyReference>
+      <AssemblyReference>System.Net.WebClient</AssemblyReference>
+      <AssemblyReference>System.Net.Requests</AssemblyReference>
+      <AssemblyReference>System.Net.ServicePoint</AssemblyReference>
+      <AssemblyReference>System.Net.WebHeaderCollection</AssemblyReference>
+      <AssemblyReference>System.CodeDom</AssemblyReference>
+      <AssemblyReference>System.Threading.AccessControl</AssemblyReference>
+      <AssemblyReference>System.Threading</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Threading.Tasks.Parallel</AssemblyReference>
+      <AssemblyReference>System.Text.Encoding.CodePages</AssemblyReference>
+      <AssemblyReference>System.Text.Encodings.Web</AssemblyReference>
+      <AssemblyReference>System.Security.Claims</AssemblyReference>
+      <AssemblyReference>System.Security.Cryptography.Pkcs</AssemblyReference>
+      <AssemblyReference>System.Security.Cryptography.ProtectedData</AssemblyReference>
+      <AssemblyReference>System.Windows.Forms.Design</AssemblyReference>
+      <AssemblyReference>System.Runtime.CompilerServices.VisualC</AssemblyReference>
+      <AssemblyReference>System.Windows.Forms</AssemblyReference>
+      <AssemblyReference>System.Resources.Writer</AssemblyReference>
+      <AssemblyReference>Microsoft.PowerShell.Commands.Diagnostics</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.FileVersionInfo</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.DiagnosticSource</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.EventLog</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.PerformanceCounter</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.TextWriterTraceListener</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.TraceSource</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.StackTrace</AssemblyReference>
+      <AssemblyReference>System.Collections.Concurrent</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="609.6,2231.2" sap2010:WorkflowViewState.IdRef="Sequence_20">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Login" sap:VirtualizedContainerService.HintSize="547.2,2142.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="4d8cb53c-c8e2-43b6-9795-ce9124aaad63" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="513.6,1902.4" sap2010:WorkflowViewState.IdRef="Sequence_19">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="451.2,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="4d8cb53c-c8e2-43b6-9795-ce9124aaad63" Text="system.user" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://dev01.ryzeclaims.com/login" CVScreenId="768c0535-4f4f-4e0f-860a-997b4eb36409" CvElementArea="563, 555, 290, 55" CvType="InputBox" DesignTimeRectangle="564, 556, 246, 52" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='jss3289 jss3273 jss3294 jss3277' aaname='' /&gt;" Guid="1adecf58-8c48-46f9-8ba3-3d7120166aaa" InformativeScreenshot="8e853a8107d97a771fe370ffea6e5be9.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Login' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="451.2,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_5" IsPassword="True" ScopeIdentifier="4d8cb53c-c8e2-43b6-9795-ce9124aaad63" Text="@Rr0P@2022" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://dev01.ryzeclaims.com/login" CVScreenId="0bdda169-2528-483d-b738-d7906e07fce3" CvElementArea="562, 623, 291, 56" CvType="InputBox" DesignTimeRectangle="564, 624, 246, 53" DesignTimeScaleFactor="1" ElementType="InputBoxPassword" FullSelectorArgument="&lt;webctrl tag='INPUT' type='password' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='password' class='jss3289 jss3273 jss3294 jss3277' aaname='' /&gt;" Guid="904284b6-96f6-49d2-a59c-9d54a2974088" InformativeScreenshot="cadbb2987b3a269fa391335808859f2f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Login' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NGetText DisplayName="Get Text 'Login'" sap:VirtualizedContainerService.HintSize="451.2,189.6" sap2010:WorkflowViewState.IdRef="NGetText_8" ScopeIdentifier="4d8cb53c-c8e2-43b6-9795-ce9124aaad63" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://dev01.ryzeclaims.com/login" CVScreenId="0bdda169-2528-483d-b738-d7906e07fce3" CvElementArea="563, 725, 290, 39" CvTextArea="689, 736, 37, 17" CvTextArgument="Login" CvType="Button" DesignTimeRectangle="580, 733, 256, 23" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl class='jss3327' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl class='jss3327' tag='SPAN' type='' /&gt;" Guid="1ec496b4-f944-43f5-86b9-5156c688f083" InformativeScreenshot="746752a83530337ca9fa536f34888879.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Login' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CVScreenId="0bdda169-2528-483d-b738-d7906e07fce3" CvElementArea="563, 725, 290, 39" CvTextArea="689, 736, 37, 17" CvTextArgument="Login" CvType="Button" DesignTimeRectangle="564, 727, 288, 35" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='jss3355 jss3326 jss3325 jss3334 w-full mx-auto mt-16 normal-case buttoncss jss3335' aaname='Login' check:innerText='Login' /&gt;" Guid="a29d24de-a7ab-4d5d-b84f-ae4c81244b21" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Login'" sap:VirtualizedContainerService.HintSize="451.2,225.6" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="4d8cb53c-c8e2-43b6-9795-ce9124aaad63" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://dev01.ryzeclaims.com/login" CVScreenId="0bdda169-2528-483d-b738-d7906e07fce3" CvElementArea="563, 725, 290, 39" CvTextArea="689, 736, 37, 17" CvTextArgument="Login" CvType="Button" DesignTimeRectangle="580, 733, 256, 23" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl class='jss3327' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl class='jss3327' tag='SPAN' type='' aaname='Login' check:innerText='Login' /&gt;" Guid="260100c8-7a51-40e4-9a42-9084798d238a" InformativeScreenshot="cce0c7c356d4d7ab2830685984abae70.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Login' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CVScreenId="0bdda169-2528-483d-b738-d7906e07fce3" CvElementArea="563, 725, 290, 39" CvTextArea="689, 736, 37, 17" CvTextArgument="Login" CvType="Button" DesignTimeRectangle="564, 727, 288, 35" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='jss3355 jss3326 jss3325 jss3334 w-full mx-auto mt-16 normal-case buttoncss jss3335' aaname='Login' check:innerText='Login' /&gt;" Guid="2027a254-55a8-4fdd-8e68-b6d46c6459b5" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Logout'" sap:VirtualizedContainerService.HintSize="451.2,225.6" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="4d8cb53c-c8e2-43b6-9795-ce9124aaad63" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://dev01.ryzeclaims.com/dashboard" DesignTimeRectangle="1753, 291, 102, 20" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Logout' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Logout' tag='SPAN' type='' class='jss4097 jss4694 jss4099 jss4126' check:innerText='Logout' /&gt;" Guid="d652f8b1-6b21-4335-b446-7be50b3219d7" InformativeScreenshot="ab24506ac2fd1cd740dcecca8c6700ab.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Dashboard' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Yes'" sap:VirtualizedContainerService.HintSize="451.2,225.6" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="4d8cb53c-c8e2-43b6-9795-ce9124aaad63" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://dev01.ryzeclaims.com/dashboard" CVScreenId="b2c16821-9329-4552-8353-3badd8f4592c" CvElementArea="798, 607, 163, 39" CvTextArea="867, 620, 25, 12" CvTextArgument="Yes" CvType="Button" DesignTimeRectangle="817, 616, 126, 22" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Yes' class='jss3987' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Yes' class='jss3987' tag='SPAN' type='' check:innerText='Yes' /&gt;" Guid="f37b4ef4-7543-4393-ae14-cfd19cd88454" InformativeScreenshot="929b0d81acf054446e424c893596bc27.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Dashboard' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CVScreenId="b2c16821-9329-4552-8353-3badd8f4592c" CvElementArea="798, 607, 163, 39" CvTextArea="867, 620, 25, 12" CvTextArgument="Yes" CvType="Button" DesignTimeRectangle="800, 609, 160, 36" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname='Yes' aria-label='Register' tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Yes' aria-label='Register' tag='BUTTON' type='button' class='jss3970 jss3986 jss3994 w-160 mb-16 mr-16 flex btn-shadow btn-outline-primary justify-center jss3995' check:innerText='Yes' /&gt;" Guid="9a1cb2e6-3265-44a0-8ee1-cfb0db79d3b4" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="451.2,372.8" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+              <ui:CommentOut.Body>
+                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,269.6" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NGetText DisplayName="Get Text 'Sign in to your account'" sap:VirtualizedContainerService.HintSize="353.6,180.8" sap2010:WorkflowViewState.IdRef="NGetText_10" ScopeIdentifier="4d8cb53c-c8e2-43b6-9795-ce9124aaad63" TextString="[TriggerEventArgs.TargetElement.Selector.Text]" Version="V3">
+                    <uix:NGetText.Target>
+                      <uix:TargetAnchorable BrowserURL="https://dev01.ryzeclaims.com/login" CVScreenId="d37ffb80-3b8b-4ccd-b193-5c75b23d78ae" CvTextArea="578, 494, 260, 27" CvType="AnyWordGroup" DesignTimeRectangle="580, 488, 256, 36" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='P' type='' class='jss4757 text-24 mb-16 font-700 font-color jss4759' /&gt;" Guid="5c866e6d-f34d-4854-bf18-d3c08600a22d" InformativeScreenshot="428b05232992ad611f5bc750aa841c6d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Login' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                    </uix:NGetText.Target>
+                  </uix:NGetText>
+                </Sequence>
+              </ui:CommentOut.Body>
+            </ui:CommentOut>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="31727932065542a22d49aacb9b35ff32.jpg" Selector="&lt;html app='chrome.exe' title='Login' /&gt;" Title="Login" Url="https://dev01.ryzeclaims.com/login" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
